@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Eduardo Manuel Cabeza López-->
+<!--Sistemas distribuidos-->
+<!--Curso 2023-24-->
+
+<!-- Se supone un proyecto en el cual todos los ficheros y directorios 
+se encuentran a partir del directorio raíz src, es decir, 
+los directorios de documentación (Javadoc), clases (.class), 
+librerias o dependencias (.jar), etc., están contenidos en el
+directorio raíz src. -->
+
+<!-- Se indica el nombre del proyecto y la tarea por defecto -->
+<!-- Esta tarea por defecto se ejecutará si no se indicaa una tarea en particular en la ejecución-->
+<project name="S01_Ant" default="allTask">
+
+	<!-- Tarea allTask. Ejecuta todas las tareas de forma secuencial respetando las dependencias de estas. -->
+	<!-- Depende de las tareas zip y genDoc, es decir, para ejecutarse esta tarea, se deben ejecutar estas dependencias antes -->
+	<!-- La tarea aparece vacía ya que solo se ejecutan sus dependencias. La tarea zip a su vez depende de compile-->
+	<!-- por lo que se ejecutarán las tres tareas al ejecutar esta -->
+	<target name="allTask" depends="zip, genDoc">
+	</target>
+
+	<!-- Tarea zip. Empaqueta los .class contenidos en el directorio src y todos sus subdirectorios en un fichero .jar -->
+	<!-- El fichero .jar será almacenado en el directorio src/jar, el cual será creado si no existe. -->
+	<target name="zip" depends="compile">
+
+		<!-- Definir la ruta del directorio en le que se genera el .jar -->
+		<property name="jarDir" value="./jar" />
+
+		<!-- Crear el directorio si no existe -->
+		<mkdir dir="${jarDir}" />
+
+		<!-- Se empaquetan los .class que se encuentren dentro del directorio raíz src -->
+		<!-- El .jar resultante se almacena en el directorio src/jar, que ya existe o ha sido creado  en las líneas anteriores -->
+		<jar destfile="${jarDir}/.jar" includes="./src/**/*.class" />
+	</target>
+
+	<!-- Tarea compile. Compila los ficheros Java en el directorio src y todos sus subdirectorios almacenando los .class en src/class -->
+	<target name="compile">
+
+		<!-- Definir ruta del directorio en el que se guardarán los .class generados -->
+		<property name="classDir" value="./src/class" />
+
+		<!-- Crear el directorio si no existe -->
+		<mkdir dir="${classDir}" />
+
+		<!-- Se compilan los ficheros Java que se encuentren en el directorio src o cualquiera de sus subdirectorios -->
+		<!-- Se almacenan los ficheros .class generados en el directorio src/class -->
+		<javac includeantruntime="false" srcdir="./src" destdir="${classDir}" />
+	</target>
+
+	<!-- Tarea genDoc. Genera la documentación Javadoc del proyecto y guarda todos los ficheros en el directorio ./doc que se encuentra al mismo nivel que el directorio src -->
+	<target name="genDoc">
+
+		<!-- Definir ruta del directorio -->
+		<property name="docDir" value="./doc" />
+
+		<!-- Crear directorio si no existe -->
+		<mkdir dir="${docDir}" />
+
+		<!-- Generar documentación Javadoc en el directorio ./doc -->
+		<javadoc sourcepath="./src" destdir="${docDir}" packagenames="*" />
+	</target>
+
+</project>
