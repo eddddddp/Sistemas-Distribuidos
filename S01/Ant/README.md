@@ -8,3 +8,4 @@ proyecto tiene una carpeta en el directorio raíz del proyecto src a partir de l
 todos los ficheros fuente.
 Para ello se deben utilizar las tareas: javac, javadoc y jar
 
+Se implementa la solución el fichero buil.xml usando eclipse 2022-12 (4.26.0) y JDK8 sobre Windows 10.
