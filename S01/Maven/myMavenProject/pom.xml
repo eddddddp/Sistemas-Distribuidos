@@ -68,21 +68,16 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.6.3</version>
-					<configuration></configuration>
+					<configuration>
+						<show>private</show>						
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 	</build>
 	<reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.6.3</version>
-        <configuration>
-          <show>public</show>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
+		<plugins>
+			
+		</plugins>
+	</reporting>
 </project>
