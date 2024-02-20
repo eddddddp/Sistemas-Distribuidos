@@ -74,10 +74,5 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-	</build>
-	<reporting>
-		<plugins>
-			
-		</plugins>
-	</reporting>
+	</build>	
 </project>
