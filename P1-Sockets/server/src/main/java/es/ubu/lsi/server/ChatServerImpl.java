@@ -312,16 +312,16 @@ public class ChatServerImpl implements ChatServer {
 			}
 		}
 
-		private void bannUser(String username, boolean ban) {
-			getusersBanned().put(username, ban);
-			if (ban == true) {
-				System.out.println(username + " ha sido bloqueado por " + getNickname() + " a las " + getTime());
+		private void bannUser(String nickname, boolean banOption) {
+			getusersBanned().put(nickname, banOption);
+			if (banOption == true) {
+				System.out.println(nickname + " ha sido bloqueado por " + getNickname() + " a las " + getTime());
 				broadcast(new ChatMessage(getClientId(), MessageType.MESSAGE,
-						username + " ha sido bloqueado por " + getNickname() + " a las " + getTime()));
+						nickname + " ha sido bloqueado por " + getNickname() + " a las " + getTime()));
 			} else {
-				System.out.println(username + " ha sido desbloqueado por " + getNickname() + " a las " + getTime());
+				System.out.println(nickname + " ha sido desbloqueado por " + getNickname() + " a las " + getTime());
 				broadcast(new ChatMessage(getClientId(), MessageType.MESSAGE,
-						username + " ha sido bloqueado por " + getNickname() + " a las " + getTime()));
+						nickname + " ha sido bloqueado por " + getNickname() + " a las " + getTime()));
 			}
 		}
 
