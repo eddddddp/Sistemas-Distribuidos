@@ -8,35 +8,35 @@
 -source
 '1.7'
 -sourcepath
-'C:/Users/Edu/eclipse-workspace/client/src/main/java'
+'C:/Users/Edu/Documents/GitHub/Sistemas-Distribuidos/P1-Sockets/client/src/main/java'
 -author
 -bottom
 'Copyright &#169; 2024. All rights reserved.'
 -charset
 'UTF-8'
 -d
-'C:/Users/Edu/eclipse-workspace/client/target/site/apidocs'
+'C:/Users/Edu/Documents/GitHub/Sistemas-Distribuidos/P1-Sockets/client/target/site/apidocs'
 -docencoding
 'UTF-8'
 -doctitle
 'client 1.0.0-SNAPSHOT API'
 -linkoffline
-'https://docs.oracle.com/javase/7/docs/api' 'C:/Users/Edu/eclipse-workspace/client/target/javadoc-bundle-options'
+'https://docs.oracle.com/javase/7/docs/api' 'C:/Users/Edu/Documents/GitHub/Sistemas-Distribuidos/P1-Sockets/client/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
 'client 1.0.0-SNAPSHOT API'
 es.ubu.lsi.client
 C:\Users\Edu\.m2\repository\es\ubu\lsi\common\1.0.0-SNAPSHOT\common-1.0.0-SNAPSHOT.jar = 1710330406490
-C:\Users\Edu\eclipse-workspace\client\src\main\java = 1709836012781
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\allclasses-frame.html = 1710852025099
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\allclasses-noframe.html = 1710852025099
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\constant-values.html = 1710852025089
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\deprecated-list.html = 1710852025098
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\help-doc.html = 1710852025103
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\index-all.html = 1710852025097
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\index.html = 1710852025100
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\overview-tree.html = 1710852025095
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\package-list = 1710852025082
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\script.js = 1710852025104
-C:\Users\Edu\eclipse-workspace\client\target\site\apidocs\stylesheet.css = 1710852025103
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\src\main\java = 1710514790828
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\allclasses-frame.html = 1711300362038
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\allclasses-noframe.html = 1711300362039
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\constant-values.html = 1711300362029
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\deprecated-list.html = 1711300362038
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\help-doc.html = 1711300362042
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\index-all.html = 1711300362036
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\index.html = 1711300362039
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\overview-tree.html = 1711300362035
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\package-list = 1711300362021
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\script.js = 1711300362042
+C:\Users\Edu\Documents\GitHub\Sistemas-Distribuidos\P1-Sockets\client\target\site\apidocs\stylesheet.css = 1710852025103
